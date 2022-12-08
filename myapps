@@ -1,0 +1,4 @@
+#!/bin/sh
+sudo apt install nginx
+sudo apt-get install -y net-tools
+sudo dnf install git-all

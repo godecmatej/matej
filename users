@@ -1,0 +1,8 @@
+#!/bin/sh
+input="/home/osboxes/scripta/uporabniki/imena"
+
+while read -r line;
+do
+        sudo adduser --gecos $line $line
+        sudo usermod -aG sudo $line
+done < "$input"
